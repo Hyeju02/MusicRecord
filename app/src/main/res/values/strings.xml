@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MusicRecording</string>
+
+    <string name="Mood">Mood</string>
+    <string-array name="array_moodormonth">
+        <item>Mood</item>
+        <item>Month</item>
+    </string-array>
+
 </resources>

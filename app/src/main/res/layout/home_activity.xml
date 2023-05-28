@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Diary Title"
+                android:id="@+id/Text_DiaryTitle"
+                android:textSize="24dp"
+                android:textColor="#000000"
+                android:gravity = "center_vertical"/>
+
+            <Button
+                android:id = "@+id/Btn_MovetoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text = "MoveSearch"/>
+
+            <Button
+                android:id = "@+id/Btn_WriteDiary"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text = "WriteDiary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation = "horizontal"
+            android:gravity="right"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content" >
+            <TextView
+                android:layout_width="90sp"
+                android:layout_height="45sp"
+                android:text="Mood or Month"/>
+            <Spinner
+                android:id="@+id/Spinner_MoodorMonth"
+                android:layout_width="fill_parent"
+                android:layout_height="45sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mood or Month"
+                android:id="@+id/Text_Option"
+                android:textSize="24dp"
+                android:textColor="#000000"
+                android:gravity = "center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/List_Diary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
