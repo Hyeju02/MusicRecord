@@ -3,5 +3,68 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+            <Button
+                android:id = "@+id/Btn_BF_toHome"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text = "BF"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:orientation = "horizontal"
+            android:gravity="right"
+            android:layout_width = "match_parent"
+            android:layout_height = "50sp" >
+            <Spinner
+                android:id="@+id/Spinner_SelectMood"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/Edit_Song"
+                android:layout_width="200sp"
+                android:layout_height="50sp" />
+            <EditText
+                android:id="@+id/Edit_Singer"
+                android:layout_width="200sp"
+                android:layout_height="50sp" />
+            <EditText
+                android:id="@+id/Edit_Url"
+                android:layout_width="200sp"
+                android:layout_height="50sp" />
+            <EditText
+                android:id="@+id/Edit_Diary"
+                android:layout_width="200sp"
+                android:layout_height="200sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+            <Button
+                android:id = "@+id/Btn_SelectCover"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text = "SelectCover"/>
+            <Button
+                android:id = "@+id/Btn_SaveDiary"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text = "SaveDiary"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

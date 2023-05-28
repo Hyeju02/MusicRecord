@@ -40,10 +40,6 @@
             android:gravity="right"
             android:layout_width = "fill_parent"
             android:layout_height = "wrap_content" >
-            <TextView
-                android:layout_width="90sp"
-                android:layout_height="45sp"
-                android:text="Mood or Month"/>
             <Spinner
                 android:id="@+id/Spinner_MoodorMonth"
                 android:layout_width="fill_parent"

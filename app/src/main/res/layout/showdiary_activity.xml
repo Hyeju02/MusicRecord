@@ -3,5 +3,106 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+            <Button
+                android:id = "@+id/Btn_BF_toHome2"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text = "BF"/>
+            <Button
+                android:id = "@+id/Btn_DiarySetting"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text = "DiarySetting"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:text="Song"
+                android:id="@+id/Text_Song"
+                android:textSize="24dp"
+                android:textColor="#000000"
+                android:gravity = "center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:text="Singer"
+                android:id="@+id/Text_Singer"
+                android:textSize="24dp"
+                android:textColor="#000000"
+                android:gravity = "center_vertical"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text="MoodofDiary"
+                android:id="@+id/Text_MoodofDiary"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:gravity = "center_vertical"/>
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text="23:01:02"
+                android:id="@+id/Text_DateofDiary"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:gravity = "center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:text="Diary"
+                android:id="@+id/Text_Diary"
+                android:textSize="24dp"
+                android:textColor="#000000"
+                android:gravity = "center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+            <Button
+                android:id = "@+id/Btn_BeforeDiary"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text = "Before"/>
+            <Button
+                android:id = "@+id/Btn_PlayDiaryUrl"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text = "PlayUrl"/>
+            <Button
+                android:id = "@+id/Btn_NextDiary"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:text = "Next"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
