@@ -3,104 +3,150 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
+    <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="58dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50sp"
+            android:layout_height="42dp"
             android:orientation="horizontal">
+
             <Button
                 android:id = "@+id/Btn_BF_toHome2"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
                 android:text = "BF"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
             <Button
                 android:id = "@+id/Btn_DiarySetting"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
                 android:text = "DiarySetting"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="30dp">
+            <ImageView
+                android:id = "@+id/ImageView_DiaryCover"
+                android:layout_width="215dp"
+                android:layout_height="215dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:paddingVertical="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="50sp"
-                android:text="Song"
+                android:layout_height="wrap_content"
+                android:text="Don't Know What TO DO"
                 android:id="@+id/Text_Song"
-                android:textSize="24dp"
-                android:textColor="#000000"
-                android:gravity = "center_vertical"/>
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:textColor="#262626"
+                android:gravity = "center"/>
 
             <TextView
+                android:paddingBottom="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="50sp"
+                android:layout_height="wrap_content"
                 android:text="Singer"
+                android:textAlignment="center"
                 android:id="@+id/Text_Singer"
-                android:textSize="24dp"
-                android:textColor="#000000"
-                android:gravity = "center_vertical"/>
+                android:textSize="12dp"
+                android:textColor="#262626"
+                android:gravity = "center"/>
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:orientation="horizontal">
+
             <TextView
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:text="MoodofDiary"
+                android:layout_marginHorizontal="10dp"
                 android:id="@+id/Text_MoodofDiary"
-                android:textSize="12dp"
-                android:textColor="#000000"
-                android:gravity = "center_vertical"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MoodofDiary"
+                android:textAlignment="center"
+                android:textColor="#262626"
+                android:textSize="12dp" />
+
+            <View
+                android:background="#262626"
+                android:layout_width ="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_gravity = "center"/>
+
             <TextView
-                android:layout_width="50sp"
-                android:layout_height="50sp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="23:01:02"
                 android:id="@+id/Text_DateofDiary"
                 android:textSize="12dp"
-                android:textColor="#000000"
-                android:gravity = "center_vertical"/>
+                android:textColor="#262626"
+                android:textAlignment="center"
+                android:layout_gravity = "center"/>
         </LinearLayout>
 
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:padding="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="200sp"
+                android:layout_height="match_parent"
                 android:text="Diary"
+                android:gravity="top"
                 android:id="@+id/Text_Diary"
-                android:textSize="24dp"
-                android:textColor="#000000"
-                android:gravity = "center_vertical"/>
+                android:textSize="12dp"
+                android:textColor="#262626" />
         </LinearLayout>
 
         <LinearLayout
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="50sp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
                 android:id = "@+id/Btn_BeforeDiary"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
                 android:text = "Before"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
             <Button
                 android:id = "@+id/Btn_PlayDiaryUrl"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
                 android:text = "PlayUrl"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
             <Button
                 android:id = "@+id/Btn_NextDiary"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
                 android:text = "Next"/>
         </LinearLayout>
 

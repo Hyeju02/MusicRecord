@@ -7,77 +7,110 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="58dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50sp"
+            android:layout_height="42dp"
             android:orientation="horizontal">
             <Button
                 android:id = "@+id/Btn_BF_toWriteDiary"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:text = "BF"/>
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:text = "BF"
+                android:padding="10dp"/>
+
+            <TextView
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Select Cover"
+                android:id="@+id/Text_SelectCover"
+                android:textSize="16dp"
+                android:textColor="#262626"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
             <Button
+                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Personalimg"
-                android:layout_width="50sp"
-                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:text = "Personalimg"/>
             <Button
+                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood1"
-                android:layout_width="50sp"
-                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:text = "Mood1"/>
             <Button
+                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood2"
-                android:layout_width="50sp"
-                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:text = "Mood2"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
             <Button
+                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood3"
-                android:layout_width="50sp"
-                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:text = "Mood3"/>
             <Button
+                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood4"
-                android:layout_width="50sp"
-                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:text = "Mood4"/>
             <Button
+                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood5"
-                android:layout_width="50sp"
-                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:text = "Mood5"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
             <Button
+                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood6"
-                android:layout_width="50sp"
-                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:text = "Mood6"/>
             <Button
+                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood7"
-                android:layout_width="50sp"
-                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:text = "Mood7"/>
             <Button
+                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood8"
-                android:layout_width="50sp"
-                android:layout_height="match_parent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:text = "Mood8"/>
         </LinearLayout>
     </LinearLayout>

@@ -7,31 +7,39 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="58dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Diary Title"
                 android:id="@+id/Text_DiaryTitle"
-                android:textSize="24dp"
+                android:textSize="16dp"
                 android:textColor="#000000"
-                android:gravity = "center_vertical"/>
-
+                android:gravity = "center_vertical"
+                android:layout_gravity="center"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
             <Button
                 android:id = "@+id/Btn_MovetoSearch"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text = "MoveSearch"/>
-
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text = "MoveSearch"
+                android:layout_gravity="center"/>
             <Button
                 android:id = "@+id/Btn_WriteDiary"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text = "WriteDiary"/>
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text = "WriteDiary"
+                android:layout_gravity="center"/>
 
         </LinearLayout>
 
@@ -43,18 +51,18 @@
             <Spinner
                 android:id="@+id/Spinner_MoodorMonth"
                 android:layout_width="fill_parent"
-                android:layout_height="45sp"/>
+                android:layout_height="42dp"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="42dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Mood or Month"
+                android:text="Sad"
                 android:id="@+id/Text_Option"
-                android:textSize="24dp"
+                android:textSize="12dp"
                 android:textColor="#000000"
                 android:gravity = "center_vertical"/>
         </LinearLayout>
