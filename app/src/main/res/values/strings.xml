@@ -7,4 +7,15 @@
         <item>Month</item>
     </string-array>
 
+    <!--Mood 종류-->
+    <string name="SelectMood">Mood</string>
+    <string-array name="array_selectmood">
+        <item>Happy</item>
+        <item>Mellow</item>
+        <item>Sorrow</item>
+        <item>SO-SO</item>
+        <item>Mad</item>
+        <item>Gloomy</item>
+    </string-array>
+
 </resources>
