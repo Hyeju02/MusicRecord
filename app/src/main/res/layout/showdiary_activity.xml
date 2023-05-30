@@ -63,7 +63,8 @@
                 android:id="@+id/Text_Song"
                 android:textAlignment="center"
                 android:textSize="14dp"
-                android:textColor="#262626"
+                android:fontFamily="@font/suitsemibold"
+                android:textColor="@color/maincolor"
                 android:gravity = "center"/>
 
             <TextView
@@ -74,7 +75,8 @@
                 android:textAlignment="center"
                 android:id="@+id/Text_Singer"
                 android:textSize="12dp"
-                android:textColor="#262626"
+                android:fontFamily="@font/suitmedium"
+                android:textColor="@color/maincolor"
                 android:gravity = "center"/>
         </LinearLayout>
 
@@ -92,7 +94,8 @@
                 android:layout_gravity="center"
                 android:text="SAD"
                 android:textAlignment="center"
-                android:textColor="#262626"
+                android:fontFamily="@font/suitregular"
+                android:textColor="@color/maincolor"
                 android:textSize="12dp" />
 
             <View
@@ -109,7 +112,8 @@
                 android:text="23:01:02"
                 android:id="@+id/Text_DateofDiary"
                 android:textSize="12dp"
-                android:textColor="#262626"
+                android:fontFamily="@font/suitregular"
+                android:textColor="@color/maincolor"
                 android:textAlignment="center"
                 android:layout_gravity = "center"/>
         </LinearLayout>
@@ -127,7 +131,8 @@
                 android:gravity="top"
                 android:id="@+id/Text_Diary"
                 android:textSize="12dp"
-                android:textColor="#262626" />
+                android:fontFamily="@font/suitregular"
+                android:textColor="@color/maincolor" />
         </LinearLayout>
 
         <LinearLayout

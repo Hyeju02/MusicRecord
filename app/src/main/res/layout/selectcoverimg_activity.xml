@@ -26,12 +26,13 @@
                 android:layout_marginRight="10dp"/>
 
             <TextView
+                android:fontFamily="@font/suitbold"
+                android:textColor="@color/maincolor"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Select Cover"
                 android:id="@+id/Text_SelectCover"
                 android:textSize="14dp"
-                android:textColor="#262626"
                 android:gravity="center"
                 android:layout_gravity="center"
                 />

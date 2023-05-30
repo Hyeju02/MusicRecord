@@ -23,10 +23,14 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <EditText
+                android:padding="10dp"
                 android:layout_weight="1"
+                android:layout_gravity="center_vertical"
                 android:id="@+id/Edit_SearchKey"
                 android:text="Search..."
                 android:textSize="12dp"
+                android:fontFamily="@font/suitregular"
+                android:textColor="@color/graycolor"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
             <ImageButton
