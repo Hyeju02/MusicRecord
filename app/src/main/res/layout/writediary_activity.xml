@@ -20,7 +20,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/Default_before"
+                android:src="@drawable/default_before"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
         </LinearLayout>
