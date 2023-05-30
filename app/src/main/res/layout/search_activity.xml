@@ -19,7 +19,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/Default_before"
+                android:src="@drawable/default_before"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <EditText
@@ -37,7 +37,7 @@
                 android:id = "@+id/Btn_Search"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/Default_search"
+                android:src="@drawable/default_search"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>

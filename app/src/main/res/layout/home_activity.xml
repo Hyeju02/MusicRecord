@@ -35,7 +35,7 @@
                 android:id = "@+id/Btn_MovetoSearch"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/Default_search"
+                android:src="@drawable/default_search"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
@@ -43,7 +43,7 @@
                 android:id = "@+id/Btn_WriteDiary"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/Default_writediary"
+                android:src="@drawable/default_writediary"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"/>

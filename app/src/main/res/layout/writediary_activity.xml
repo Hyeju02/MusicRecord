@@ -135,7 +135,7 @@
                     android:id = "@+id/Btn_SelectCover"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/Default_selectcover"
+                    android:src="@drawable/default_selectcover"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:layout_marginRight="10dp"/>
@@ -143,7 +143,7 @@
                     android:id = "@+id/Btn_SaveDiary"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/Default_savediary"
+                    android:src="@drawable/default_savediary"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"/>
             </LinearLayout>

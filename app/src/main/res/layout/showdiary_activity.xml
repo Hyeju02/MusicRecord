@@ -144,7 +144,7 @@
                 android:id = "@+id/Btn_BeforeDiary"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/Default_beforediary"
+                android:src="@drawable/default_beforediary"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
@@ -156,7 +156,7 @@
                 android:id = "@+id/Btn_PlayDiaryUrl"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/Default_playurl"
+                android:src="@drawable/default_playurl"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
@@ -168,7 +168,7 @@
                 android:id = "@+id/Btn_NextDiary"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/Default_nextdiary"
+                android:src="@drawable/default_nextdiary"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"/>

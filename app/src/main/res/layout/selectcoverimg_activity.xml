@@ -20,7 +20,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/Default_before"
+                android:src="@drawable/default_before"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:layout_marginRight="10dp"/>
@@ -50,7 +50,7 @@
                 android:id = "@+id/Btn_Personalimg"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/Default_selectpersonal"
+                android:src="@drawable/default_selectpersonal"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
@@ -58,7 +58,7 @@
                 android:id = "@+id/Btn_Mood1"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/Default_covermood1"
+                android:src="@drawable/default_covermood1"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
@@ -66,7 +66,7 @@
                 android:id = "@+id/Btn_Mood2"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/Default_covermood2"
+                android:src="@drawable/default_covermood2"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
         </LinearLayout>
@@ -82,7 +82,7 @@
                 android:id = "@+id/Btn_Mood3"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/Default_covermood3"
+                android:src="@drawable/default_covermood3"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
@@ -90,7 +90,7 @@
                 android:id = "@+id/Btn_Mood4"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/Default_covermood4"
+                android:src="@drawable/default_covermood4"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
@@ -98,7 +98,7 @@
                 android:id = "@+id/Btn_Mood5"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/Default_covermood5"
+                android:src="@drawable/default_covermood5"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
         </LinearLayout>
@@ -114,7 +114,7 @@
                 android:id = "@+id/Btn_Mood6"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/Default_covermood6"
+                android:src="@drawable/default_covermood6"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
@@ -122,7 +122,7 @@
                 android:id = "@+id/Btn_Mood7"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/Default_covermood7"
+                android:src="@drawable/default_covermood7"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
@@ -130,7 +130,7 @@
                 android:id = "@+id/Btn_Mood8"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/Default_covermood8"
+                android:src="@drawable/default_covermood8"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
         </LinearLayout>
