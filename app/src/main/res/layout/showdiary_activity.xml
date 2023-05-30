@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/mainbackcolor"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -19,7 +20,8 @@
                 android:layout_height="21dp"
                 android:layout_gravity="center"
                 android:src="@drawable/Default_before"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -30,7 +32,8 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/Default_diarysetting"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
         <LinearLayout
@@ -39,10 +42,13 @@
             android:orientation="vertical"
             android:paddingVertical="30dp">
             <ImageView
+                android:src="@drawable/img_covermood7"
                 android:id = "@+id/ImageView_DiaryCover"
                 android:layout_width="215dp"
                 android:layout_height="215dp"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
         <LinearLayout
@@ -64,7 +70,7 @@
                 android:paddingBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Singer"
+                android:text="BLACKPINK"
                 android:textAlignment="center"
                 android:id="@+id/Text_Singer"
                 android:textSize="12dp"
@@ -84,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="MoodofDiary"
+                android:text="SAD"
                 android:textAlignment="center"
                 android:textColor="#262626"
                 android:textSize="12dp" />
@@ -134,8 +140,9 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/Default_beforediary"
-                android:scaleType="fitXY"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -145,7 +152,8 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/Default_playurl"
-                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
             <View
                 android:layout_width="0dp"
@@ -156,7 +164,8 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/Default_nextdiary"
-                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
         </LinearLayout>
 

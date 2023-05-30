@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/mainbackcolor"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -20,7 +21,8 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/Default_before"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
         <LinearLayout
@@ -38,6 +40,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <EditText
+                android:padding="10dp"
+                android:textSize="12dp"
                 android:id="@+id/Edit_Song"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
@@ -45,6 +49,8 @@
                 android:gravity="top"/>
 
             <EditText
+                android:padding="10dp"
+                android:textSize="12dp"
                 android:id="@+id/Edit_Singer"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
@@ -52,6 +58,8 @@
                 android:gravity="top"/>
 
             <EditText
+                android:padding="10dp"
+                android:textSize="12dp"
                 android:id="@+id/Edit_Url"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
@@ -64,6 +72,8 @@
                 android:layout_height="1dp" />
 
             <EditText
+                android:padding="10dp"
+                android:textSize="12dp"
                 android:id="@+id/Edit_Diary"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -84,13 +94,16 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/Default_selectcover"
-                    android:scaleType="fitXY"/>
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="10dp"/>
                 <ImageButton
                     android:id = "@+id/Btn_SaveDiary"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/Default_savediary"
-                    android:scaleType="fitXY"/>
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
             </LinearLayout>
         </LinearLayout>
 

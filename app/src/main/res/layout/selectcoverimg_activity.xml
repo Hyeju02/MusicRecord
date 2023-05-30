@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/mainbackcolor"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -20,11 +21,11 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/Default_before"
-                android:scaleType="fitXY"
-                android:padding="10dp"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="10dp"/>
 
             <TextView
-                android:padding="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Select Cover"
@@ -49,21 +50,24 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/Default_selectpersonal"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
             <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood1"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/Default_covermood1"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
             <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood2"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/Default_covermood2"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
         <LinearLayout
@@ -78,21 +82,24 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/Default_covermood3"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
             <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood4"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/Default_covermood4"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
             <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood5"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/Default_covermood5"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
         <LinearLayout
@@ -107,21 +114,24 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/Default_covermood6"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
             <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood7"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/Default_covermood7"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
             <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood8"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/Default_covermood8"
-                android:scaleType="fitXY"/>
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

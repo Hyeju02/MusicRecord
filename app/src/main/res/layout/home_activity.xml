@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/mainbackcolor"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -29,18 +30,21 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <ImageButton
+                android:layout_marginRight="10dp"
                 android:id = "@+id/Btn_MovetoSearch"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/Default_search"
-                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
             <ImageButton
                 android:id = "@+id/Btn_WriteDiary"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/Default_writediary"
-                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
