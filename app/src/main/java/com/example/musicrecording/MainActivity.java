@@ -3,15 +3,19 @@ package com.example.musicrecording;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     Spinner spinner;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +36,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v){
-        switch (v.getId()){
+
+
+        switch (v.getId()) {
             case R.id.Btn_WriteDiary:
-                Intent writediary = new Intent(this,WriteDiaryActivity.class);
+                Intent writediary = new Intent(this, WriteDiaryActivity.class);
                 startActivity(writediary);
 
         }
