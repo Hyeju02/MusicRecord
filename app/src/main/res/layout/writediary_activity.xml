@@ -14,12 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:orientation="horizontal">
-            <Button
+            <ImageButton
                 android:id = "@+id/Btn_BF_toHome"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:text = "BF"/>
+                android:src="@drawable/Default_before"
+                android:scaleType="fitXY"/>
         </LinearLayout>
 
         <LinearLayout
@@ -78,16 +79,18 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_weight="1" />
-                <Button
+                <ImageButton
                     android:id = "@+id/Btn_SelectCover"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:text = "SelectCover"/>
-                <Button
+                    android:src="@drawable/Default_selectcover"
+                    android:scaleType="fitXY"/>
+                <ImageButton
                     android:id = "@+id/Btn_SaveDiary"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:text = "SaveDiary"/>
+                    android:src="@drawable/Default_savediary"
+                    android:scaleType="fitXY"/>
             </LinearLayout>
         </LinearLayout>
 

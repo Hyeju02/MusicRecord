@@ -13,12 +13,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-            <Button
+            <ImageButton
                 android:id = "@+id/Btn_BF_toHome3"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:text = "BF"/>
+                android:src="@drawable/Default_before"
+                android:scaleType="fitXY"/>
             <EditText
                 android:layout_weight="1"
                 android:id="@+id/Edit_SearchKey"
@@ -26,11 +27,12 @@
                 android:textSize="12dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-            <Button
+            <ImageButton
                 android:id = "@+id/Btn_Search"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:text = "Search"
+                android:src="@drawable/Default_search"
+                android:scaleType="fitXY"
                 android:layout_gravity="center"/>
 
     </LinearLayout>

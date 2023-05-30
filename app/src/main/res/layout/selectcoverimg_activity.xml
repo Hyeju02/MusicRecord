@@ -14,12 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:orientation="horizontal">
-            <Button
+            <ImageButton
                 android:id = "@+id/Btn_BF_toWriteDiary"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:text = "BF"
+                android:src="@drawable/Default_before"
+                android:scaleType="fitXY"
                 android:padding="10dp"/>
 
             <TextView
@@ -42,24 +43,27 @@
             android:orientation="horizontal"
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp">
-            <Button
+            <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Personalimg"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text = "Personalimg"/>
-            <Button
+                android:src="@drawable/Default_selectpersonal"
+                android:scaleType="fitXY"/>
+            <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood1"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text = "Mood1"/>
-            <Button
+                android:src="@drawable/Default_covermood1"
+                android:scaleType="fitXY"/>
+            <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood2"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text = "Mood2"/>
+                android:src="@drawable/Default_covermood2"
+                android:scaleType="fitXY"/>
         </LinearLayout>
 
         <LinearLayout
@@ -68,24 +72,27 @@
             android:orientation="horizontal"
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp">
-            <Button
+            <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood3"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text = "Mood3"/>
-            <Button
+                android:src="@drawable/Default_covermood3"
+                android:scaleType="fitXY"/>
+            <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood4"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text = "Mood4"/>
-            <Button
+                android:src="@drawable/Default_covermood4"
+                android:scaleType="fitXY"/>
+            <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood5"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text = "Mood5"/>
+                android:src="@drawable/Default_covermood5"
+                android:scaleType="fitXY"/>
         </LinearLayout>
 
         <LinearLayout
@@ -94,24 +101,27 @@
             android:orientation="horizontal"
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp">
-            <Button
+            <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood6"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text = "Mood6"/>
-            <Button
+                android:src="@drawable/Default_covermood6"
+                android:scaleType="fitXY"/>
+            <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood7"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text = "Mood7"/>
-            <Button
+                android:src="@drawable/Default_covermood7"
+                android:scaleType="fitXY"/>
+            <ImageButton
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood8"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text = "Mood8"/>
+                android:src="@drawable/Default_covermood8"
+                android:scaleType="fitXY"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -15,7 +15,9 @@
             android:id="@+id/imageView1"
             android:layout_width="7dp"
             android:layout_height="7dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:src="@drawable/Circle_mood1"
+            android:scaleType="fitXY"/>
 
         <TextView
             android:layout_width="150dp"

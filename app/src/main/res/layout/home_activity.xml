@@ -28,17 +28,19 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
-            <Button
+            <ImageButton
                 android:id = "@+id/Btn_MovetoSearch"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:text = "MoveSearch"
+                android:src="@drawable/Default_search"
+                android:scaleType="fitXY"
                 android:layout_gravity="center"/>
-            <Button
+            <ImageButton
                 android:id = "@+id/Btn_WriteDiary"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:text = "WriteDiary"
+                android:src="@drawable/Default_writediary"
+                android:scaleType="fitXY"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
