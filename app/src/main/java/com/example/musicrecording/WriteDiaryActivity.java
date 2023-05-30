@@ -27,6 +27,10 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
         Button Btn_BF_toHome = (Button) findViewById(R.id.Btn_BF_toHome);
         Btn_BF_toHome.setOnClickListener(this);
 
+        //커버 고르는 엑티비티로 넘어가는 버튼
+        Button Btn_cover = (Button)findViewById(R.id.Btn_SelectCover);
+        Btn_cover.setOnClickListener(this);
+
         //저장하는 버튼
         Button Btn_Save = (Button)findViewById(R.id.Btn_SaveDiary);
         Btn_Save.setOnClickListener(this);
@@ -70,6 +74,9 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
                 Intent home = new Intent(this, MainActivity.class);
                 startActivity(home);
 
+            case R.id.Btn_SelectCover:
+                Intent cover = new Intent(this, SelectCover_Activity.class);
+                startActivity(cover);
 
             case R.id.Btn_SaveDiary:
                 try {
