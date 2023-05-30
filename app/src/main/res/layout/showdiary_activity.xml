@@ -15,8 +15,9 @@
 
             <Button
                 android:id = "@+id/Btn_BF_toHome2"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
                 android:text = "BF"/>
             <View
                 android:layout_width="0dp"
@@ -24,8 +25,9 @@
                 android:layout_weight="1" />
             <Button
                 android:id = "@+id/Btn_DiarySetting"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
                 android:text = "DiarySetting"/>
         </LinearLayout>
 
@@ -127,27 +129,30 @@
             android:orientation="horizontal">
             <Button
                 android:id = "@+id/Btn_BeforeDiary"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:text = "Before"/>
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text = "Before"
+                android:layout_gravity="center"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
             <Button
                 android:id = "@+id/Btn_PlayDiaryUrl"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:text = "PlayUrl"/>
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text = "PlayUrl"
+                android:layout_gravity="center"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <Button
                 android:id = "@+id/Btn_NextDiary"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:text = "Next"/>
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text = "Next"
+                android:layout_gravity="center"/>
         </LinearLayout>
 
     </LinearLayout>

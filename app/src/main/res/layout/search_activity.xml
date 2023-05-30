@@ -15,20 +15,21 @@
             android:orientation="horizontal">
             <Button
                 android:id = "@+id/Btn_BF_toHome3"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:text = "BF"/>
             <EditText
                 android:layout_weight="1"
                 android:id="@+id/Edit_SearchKey"
                 android:text="Search..."
+                android:textSize="12dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
             <Button
                 android:id = "@+id/Btn_Search"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:text = "Search"
                 android:layout_gravity="center"/>
 

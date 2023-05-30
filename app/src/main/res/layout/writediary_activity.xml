@@ -16,8 +16,8 @@
             android:orientation="horizontal">
             <Button
                 android:id = "@+id/Btn_BF_toHome"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:text = "BF"/>
         </LinearLayout>
@@ -80,13 +80,13 @@
                     android:layout_weight="1" />
                 <Button
                     android:id = "@+id/Btn_SelectCover"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:text = "SelectCover"/>
                 <Button
                     android:id = "@+id/Btn_SaveDiary"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:text = "SaveDiary"/>
             </LinearLayout>
         </LinearLayout>

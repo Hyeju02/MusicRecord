@@ -16,8 +16,8 @@
             android:orientation="horizontal">
             <Button
                 android:id = "@+id/Btn_BF_toWriteDiary"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:text = "BF"
                 android:padding="10dp"/>
@@ -28,7 +28,7 @@
                 android:layout_height="match_parent"
                 android:text="Select Cover"
                 android:id="@+id/Text_SelectCover"
-                android:textSize="16dp"
+                android:textSize="14dp"
                 android:textColor="#262626"
                 android:gravity="center"
                 android:layout_gravity="center"

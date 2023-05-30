@@ -30,14 +30,14 @@
                 android:layout_weight="1" />
             <Button
                 android:id = "@+id/Btn_MovetoSearch"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:text = "MoveSearch"
                 android:layout_gravity="center"/>
             <Button
                 android:id = "@+id/Btn_WriteDiary"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:text = "WriteDiary"
                 android:layout_gravity="center"/>
 
