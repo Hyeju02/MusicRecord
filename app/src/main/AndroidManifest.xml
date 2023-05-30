@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".WriteDiaryActivity"/>
+        <activity android:name=".SelectCover_Activity"/>
     </application>
 
 </manifest>
