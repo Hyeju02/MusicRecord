@@ -29,6 +29,33 @@
             android:orientation = "horizontal"
             android:layout_width = "match_parent"
             android:layout_height = "42dp" >
+            <EditText
+                android:fontFamily="@font/suitregular"
+                android:textColor="@color/graycolor"
+                android:padding="10dp"
+                android:textSize="12dp"
+                android:id="@+id/Edit_adddate"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="YY:MM:DD"
+                android:gravity="top"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation = "horizontal"
+            android:layout_width = "match_parent"
+            android:layout_height = "10dp" >
+            <View
+                android:layout_gravity="center"
+                android:background="@color/graycolor"
+                android:layout_width ="match_parent"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation = "horizontal"
+            android:layout_width = "match_parent"
+            android:layout_height = "42dp" >
             <Spinner
                 android:id="@+id/Spinner_SelectMood"
                 android:layout_width="match_parent"
@@ -72,10 +99,17 @@
                 android:text="Uri"
                 android:gravity="top"
                 />
-            <View
-                android:background="#262626"
-                android:layout_width ="match_parent"
-                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:orientation = "horizontal"
+                android:layout_width = "match_parent"
+                android:layout_height = "10dp" >
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/graycolor"
+                    android:layout_width ="match_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
 
             <EditText
                 android:fontFamily="@font/suitregular"

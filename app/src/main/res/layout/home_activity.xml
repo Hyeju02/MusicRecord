@@ -64,15 +64,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="42dp">
-            <TextView
-                android:fontFamily="@font/suitsemibold"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Sad"
-                android:textColor="@color/maincolor"
-                android:id="@+id/Text_Option"
-                android:textSize="12dp"
-                android:gravity = "center_vertical"/>
+            <Spinner
+                android:id="@+id/Spinner_SelectMoodorMonth"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"/>
         </LinearLayout>
 
         <LinearLayout

@@ -106,16 +106,16 @@
                 android:layout_gravity = "center"/>
 
             <TextView
-                android:layout_marginHorizontal="10dp"
+                android:id="@+id/Text_DateofDiary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="23:01:02"
-                android:id="@+id/Text_DateofDiary"
-                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
                 android:fontFamily="@font/suitregular"
-                android:textColor="@color/maincolor"
+                android:text="23:01:02"
                 android:textAlignment="center"
-                android:layout_gravity = "center"/>
+                android:textColor="@color/maincolor"
+                android:textSize="12dp" />
         </LinearLayout>
 
         <LinearLayout
