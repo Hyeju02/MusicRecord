@@ -21,8 +21,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
 
+        //다이어리 새로 작성하는 버튼
         Button Btn_WriteDiary = (Button) findViewById(R.id.Btn_WriteDiary);
         Btn_WriteDiary.setOnClickListener(this);
+
+        //검색 버튼
+        Button Btn_search = (Button)findViewById(R.id.Btn_MovetoSearch);
+        Btn_search.setOnClickListener(this);
 
         //무드 혹은 달 고르는 스피너
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
@@ -42,6 +47,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Btn_WriteDiary:
                 Intent writediary = new Intent(this, WriteDiaryActivity.class);
                 startActivity(writediary);
+                finish();
+                break;
+
+            case R.id.Btn_MovetoSearch:
+                Intent searchpage = new Intent(this, SearchActivity.class);
+                startActivity(searchpage);
+                finish();
+                break;
 
         }
 
