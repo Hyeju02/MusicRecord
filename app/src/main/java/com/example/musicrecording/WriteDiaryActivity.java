@@ -71,12 +71,15 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
 
         switch (v.getId()){
             case R.id.Btn_BF_toHome:
-                Intent home = new Intent(this, MainActivity.class);
-                startActivity(home);
+                onBackPressed();
+                finish();
+                break;
 
             case R.id.Btn_SelectCover:
                 Intent cover = new Intent(this, SelectCover_Activity.class);
                 startActivity(cover);
+                finish();
+                break;
 
             case R.id.Btn_SaveDiary:
                 try {
@@ -88,7 +91,7 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
                         sdb.execSQL("insert into music values('" + str_title + "','" + str_singer + "','" + str_mood + "','" + str_url + "','" + str_diary + "';");
                         dbmgr.close();
 
-                        Intent it = new Intent(this, SaveData.class);
+                        Intent it = new Intent(this, MainActivity.class);
                         startActivity(it);
                         finish();
                         break;
