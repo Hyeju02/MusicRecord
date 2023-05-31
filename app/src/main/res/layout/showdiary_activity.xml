@@ -15,6 +15,7 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id="@+id/Btn_BF_toHome2"
                 android:layout_width="21dp"
                 android:layout_height="21dp"
@@ -27,6 +28,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id = "@+id/Btn_DiarySetting"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -42,6 +44,7 @@
             android:orientation="vertical"
             android:paddingVertical="30dp">
             <ImageView
+                android:background="@android:color/transparent"
                 android:src="@drawable/img_covermood7"
                 android:id = "@+id/ImageView_DiaryCover"
                 android:layout_width="215dp"
@@ -141,6 +144,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id = "@+id/Btn_BeforeDiary"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
@@ -153,6 +157,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id = "@+id/Btn_PlayDiaryUrl"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
@@ -165,6 +170,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id = "@+id/Btn_NextDiary"
                 android:layout_width="32dp"
                 android:layout_height="32dp"

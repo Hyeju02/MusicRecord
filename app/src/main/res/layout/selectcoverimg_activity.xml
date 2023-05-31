@@ -16,6 +16,7 @@
             android:layout_height="42dp"
             android:orientation="horizontal">
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id = "@+id/Btn_BF_toWriteDiary"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -46,6 +47,7 @@
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp">
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Personalimg"
                 android:layout_width="75dp"
@@ -54,6 +56,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood1"
                 android:layout_width="75dp"
@@ -62,6 +65,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood2"
                 android:layout_width="75dp"
@@ -78,6 +82,7 @@
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp">
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood3"
                 android:layout_width="75dp"
@@ -86,6 +91,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood4"
                 android:layout_width="75dp"
@@ -94,6 +100,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood5"
                 android:layout_width="75dp"
@@ -110,6 +117,7 @@
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp">
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood6"
                 android:layout_width="75dp"
@@ -118,6 +126,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood7"
                 android:layout_width="75dp"
@@ -126,6 +135,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood8"
                 android:layout_width="75dp"

@@ -15,6 +15,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id = "@+id/Btn_BF_toHome3"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -23,6 +24,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <EditText
+                android:background="@null"
                 android:padding="10dp"
                 android:layout_weight="1"
                 android:layout_gravity="center_vertical"
@@ -34,6 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id = "@+id/Btn_Search"
                 android:layout_width="24dp"
                 android:layout_height="24dp"

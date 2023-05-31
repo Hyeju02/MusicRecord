@@ -31,6 +31,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginRight="10dp"
                 android:id = "@+id/Btn_MovetoSearch"
                 android:layout_width="24dp"
@@ -40,6 +41,7 @@
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id = "@+id/Btn_WriteDiary"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -56,21 +58,25 @@
             android:layout_width = "fill_parent"
             android:layout_height = "wrap_content" >
             <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_marginRight="10dp"
                 android:id = "@+id/Btn_HomeMood"
                 android:layout_width="60dp"
                 android:layout_height="24dp"
                 android:src="@drawable/default_homemood"
                 android:adjustViewBounds="true"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"/>
 
             <ImageButton
+                android:background="@android:color/transparent"
                 android:id = "@+id/Btn_HomeMonth"
                 android:layout_width="60dp"
                 android:layout_height="24dp"
                 android:src="@drawable/default_homemonth"
                 android:adjustViewBounds="true"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"/>
 
         </LinearLayout>
 
