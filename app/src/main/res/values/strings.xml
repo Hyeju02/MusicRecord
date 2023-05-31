@@ -18,4 +18,21 @@
         <item>Gloomy</item>
     </string-array>
 
+    <!--Month-->
+    <string name="Month">Month</string>
+    <string-array name="array_selectmonth">
+        <item>Jen</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
 </resources>
