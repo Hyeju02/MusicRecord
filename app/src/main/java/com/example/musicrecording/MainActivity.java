@@ -32,6 +32,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageButton Btn_search = (ImageButton) findViewById(R.id.Btn_MovetoSearch);
         Btn_search.setOnClickListener(this);
 
+        //무드 버튼
+        ImageButton Btn_Mood = (ImageButton) findViewById(R.id.Btn_HomeMood);
+        Btn_Mood.setOnClickListener(this);
+
+        //달 고르는 버튼
+        ImageButton Btn_Month = (ImageButton) findViewById(R.id.Btn_HomeMonth);
+        Btn_Month.setOnClickListener(this);
+
         //무드 혹은 달 고르는 스피너
         /*ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this,R.array.array_moodormonth, android.R.layout.simple_dropdown_item_1line

@@ -37,7 +37,7 @@
                 android:id="@+id/Edit_addyy"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:text="YY"
+                android:hint="YY"
                 android:gravity="top"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
                 android:id="@+id/Edit_addmm"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:text="MM"
+                android:hint="MM"
                 android:gravity="top"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -77,7 +77,7 @@
                 android:id="@+id/Edit_adddd"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:text="DD"
+                android:hint="DD"
                 android:gravity="top"/>
         </LinearLayout>
 
@@ -114,7 +114,7 @@
                 android:id="@+id/Edit_Song"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:text="Song"
+                android:hint="Song"
                 android:gravity="top"/>
 
             <EditText
@@ -125,7 +125,7 @@
                 android:id="@+id/Edit_Singer"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:text="Singer"
+                android:hint="Singer"
                 android:gravity="top"/>
 
             <EditText
@@ -136,7 +136,7 @@
                 android:id="@+id/Edit_Url"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:text="Uri"
+                android:hint="Uri"
                 android:gravity="top"
                 />
 
@@ -160,7 +160,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Record"
+                android:hint="Record"
                 android:gravity="top"/>
 
             <LinearLayout

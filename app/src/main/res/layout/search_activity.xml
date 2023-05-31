@@ -27,7 +27,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center_vertical"
                 android:id="@+id/Edit_SearchKey"
-                android:text="Search..."
+                android:hint="Search..."
                 android:textSize="12dp"
                 android:fontFamily="@font/suitregular"
                 android:textColor="@color/graycolor"
