@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -21,11 +22,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.home_activity);
 
         //다이어리 새로 작성하는 버튼
-        Button Btn_WriteDiary = (Button) findViewById(R.id.Btn_WriteDiary);
+        ImageButton Btn_WriteDiary = (ImageButton) findViewById(R.id.Btn_WriteDiary);
         Btn_WriteDiary.setOnClickListener(this);
 
         //검색 버튼
-        Button Btn_search = (Button)findViewById(R.id.Btn_MovetoSearch);
+        ImageButton Btn_search = (ImageButton) findViewById(R.id.Btn_MovetoSearch);
         Btn_search.setOnClickListener(this);
 
         //무드 혹은 달 고르는 스피너
