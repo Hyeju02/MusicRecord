@@ -52,13 +52,26 @@
 
         <LinearLayout
             android:orientation = "horizontal"
-            android:gravity="right"
+            android:gravity="left"
             android:layout_width = "fill_parent"
             android:layout_height = "wrap_content" >
-            <Spinner
-                android:id="@+id/Spinner_MoodorMonth"
-                android:layout_width="fill_parent"
-                android:layout_height="42dp"/>
+            <ImageButton
+                android:layout_marginRight="10dp"
+                android:id = "@+id/Btn_HomeMood"
+                android:layout_width="60dp"
+                android:layout_height="24dp"
+                android:src="@drawable/default_homemood"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id = "@+id/Btn_HomeMonth"
+                android:layout_width="60dp"
+                android:layout_height="24dp"
+                android:src="@drawable/default_homemonth"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"/>
+
         </LinearLayout>
 
         <LinearLayout
