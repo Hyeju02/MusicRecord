@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Btn_search.setOnClickListener(this);
 
         //무드 혹은 달 고르는 스피너
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+        /*ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this,R.array.array_moodormonth, android.R.layout.simple_dropdown_item_1line
         );
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinner = (Spinner)findViewById(R.id.Spinner_MoodorMonth);
-        spinner.setAdapter(adapter);
+        spinner.setAdapter(adapter);*/
 
         //무드 선택하면 무드 스피너, 달 선택하면 달 스피너
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(

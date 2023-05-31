@@ -50,9 +50,16 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
 
     public void onClick(View v){
 
-        //날짜
-        EditText et_date = (EditText)findViewById(R.id.Edit_adddate);
-        String str_date = et_date.getText().toString();
+        //(0531)날짜 수정
+        //년
+        EditText et_dateyy = (EditText)findViewById(R.id.Edit_addyy);
+        String str_dateyy = et_dateyy.getText().toString();
+        //월
+        EditText et_datemm = (EditText)findViewById(R.id.Edit_addmm);
+        String str_datemm = et_datemm.getText().toString();
+        //일
+        EditText et_datedd = (EditText)findViewById(R.id.Edit_adddd);
+        String str_datedd = et_datedd.getText().toString();
 
         EditText et_title = (EditText) findViewById(R.id.Edit_Song);
         String str_title = et_title.getText().toString();
@@ -91,7 +98,8 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
                         caution.show();
                         break;
                     } else {
-                        sdb.execSQL("insert into music values('" + str_date + "','" + str_title + "','" + str_singer + "','" + str_mood + "','" + str_url + "','" + str_diary + "';");
+                        //(0531)execSQL str_date에서 str_dateyy, datemm, datedd로 수정
+                        sdb.execSQL("insert into music values('" + str_dateyy + "', '" + str_datemm + "', '" + str_datedd + "', '" + str_title + "','" + str_singer + "','" + str_mood + "','" + str_url + "','" + str_diary + "';");
                         dbmgr.close();
 
                         Intent it = new Intent(this, MainActivity.class);
