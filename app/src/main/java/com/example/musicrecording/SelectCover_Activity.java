@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 import android.widget.Toolbar;
 
 
@@ -16,22 +17,22 @@ public class SelectCover_Activity extends Activity implements View.OnClickListen
         setContentView(R.layout.selectcoverimg_activity);
 
         //다이어리 쓰는 곳으로 돌아가는 이전 버튼
-        Button Btn_ToWriteDiary = (Button) findViewById(R.id.Btn_BF_toWriteDiary);
+        ImageButton Btn_ToWriteDiary = (ImageButton) findViewById(R.id.Btn_BF_toWriteDiary);
         Btn_ToWriteDiary.setOnClickListener(this);
 
         //갤러리에 접근하는 버튼
-        Button Btn_Personalimg = (Button) findViewById(R.id.Btn_Personalimg);
+        ImageButton Btn_Personalimg = (ImageButton) findViewById(R.id.Btn_Personalimg);
         Btn_Personalimg.setOnClickListener(this);
 
         //무드 버튼들
-        Button mood1 = (Button) findViewById(R.id.Btn_Mood1);
-        Button mood2 = (Button) findViewById(R.id.Btn_Mood2);
-        Button mood3 = (Button) findViewById(R.id.Btn_Mood3);
-        Button mood4 = (Button) findViewById(R.id.Btn_Mood4);
-        Button mood5 = (Button) findViewById(R.id.Btn_Mood5);
-        Button mood6 = (Button) findViewById(R.id.Btn_Mood6);
-        Button mood7 = (Button) findViewById(R.id.Btn_Mood7);
-        Button mood8 = (Button) findViewById(R.id.Btn_Mood8);
+        ImageButton mood1 = (ImageButton) findViewById(R.id.Btn_Mood1);
+        ImageButton mood2 = (ImageButton) findViewById(R.id.Btn_Mood2);
+        ImageButton mood3 = (ImageButton) findViewById(R.id.Btn_Mood3);
+        ImageButton mood4 = (ImageButton) findViewById(R.id.Btn_Mood4);
+        ImageButton mood5 = (ImageButton) findViewById(R.id.Btn_Mood5);
+        ImageButton mood6 = (ImageButton) findViewById(R.id.Btn_Mood6);
+        ImageButton mood7 = (ImageButton) findViewById(R.id.Btn_Mood7);
+        ImageButton mood8 = (ImageButton) findViewById(R.id.Btn_Mood8);
         mood1.setOnClickListener(this);
         mood2.setOnClickListener(this);
         mood3.setOnClickListener(this);

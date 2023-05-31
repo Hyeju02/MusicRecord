@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -24,15 +25,15 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
         setContentView(R.layout.writediary_activity);
 
         //홈화면으로 돌아가는 버튼
-        Button Btn_BF_toHome = (Button) findViewById(R.id.Btn_BF_toHome);
+        ImageButton Btn_BF_toHome = (ImageButton) findViewById(R.id.Btn_BF_toHome);
         Btn_BF_toHome.setOnClickListener(this);
 
         //커버 고르는 엑티비티로 넘어가는 버튼
-        Button Btn_cover = (Button)findViewById(R.id.Btn_SelectCover);
+        ImageButton Btn_cover = (ImageButton) findViewById(R.id.Btn_SelectCover);
         Btn_cover.setOnClickListener(this);
 
         //저장하는 버튼
-        Button Btn_Save = (Button)findViewById(R.id.Btn_SaveDiary);
+        ImageButton Btn_Save = (ImageButton)findViewById(R.id.Btn_SaveDiary);
         Btn_Save.setOnClickListener(this);
 
 
@@ -48,6 +49,10 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
     }
 
     public void onClick(View v){
+
+        //날짜
+        EditText et_date = (EditText)findViewById(R.id.Edit_adddate);
+        String str_date = et_date.getText().toString();
 
         EditText et_title = (EditText) findViewById(R.id.Edit_Song);
         String str_title = et_title.getText().toString();
@@ -88,7 +93,7 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
                         caution.show();
                         break;
                     } else {
-                        sdb.execSQL("insert into music values('" + str_title + "','" + str_singer + "','" + str_mood + "','" + str_url + "','" + str_diary + "';");
+                        sdb.execSQL("insert into music values('" + str_date + "','" + str_title + "','" + str_singer + "','" + str_mood + "','" + str_url + "','" + str_diary + "';");
                         dbmgr.close();
 
                         Intent it = new Intent(this, MainActivity.class);

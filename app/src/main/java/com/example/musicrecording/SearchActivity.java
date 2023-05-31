@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class SearchActivity extends Activity implements View.OnClickListener {
@@ -17,11 +18,11 @@ public class SearchActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.search_activity);
 
         //홈으로 돌아가는 버튼
-        Button Btn_backtohome = (Button) findViewById(R.id.Btn_BF_toHome3);
+        ImageButton Btn_backtohome = (ImageButton) findViewById(R.id.Btn_BF_toHome3);
         Btn_backtohome.setOnClickListener(this);
 
         //검색 버튼
-        Button Btn_search = (Button) findViewById(R.id.Btn_Search);
+        ImageButton Btn_search = (ImageButton) findViewById(R.id.Btn_Search);
         Btn_search.setOnClickListener(this);
 
 

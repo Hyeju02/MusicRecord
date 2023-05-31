@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".WriteDiaryActivity"/>
         <activity android:name=".SelectCover_Activity"/>
+        <activity android:name=".SearchActivity"/>
 
     </application>
 
