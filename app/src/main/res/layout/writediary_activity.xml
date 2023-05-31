@@ -27,17 +27,57 @@
 
         <LinearLayout
             android:orientation = "horizontal"
-            android:layout_width = "match_parent"
+            android:layout_width = "wrap_content"
             android:layout_height = "42dp" >
             <EditText
                 android:fontFamily="@font/suitregular"
                 android:textColor="@color/graycolor"
                 android:padding="10dp"
                 android:textSize="12dp"
-                android:id="@+id/Edit_adddate"
+                android:id="@+id/Edit_addyy"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:text="YY:MM:DD"
+                android:text="YY"
+                android:gravity="top"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/suitregular"
+                android:text=" : "
+                android:id="@+id/Text_date1"
+                android:textSize="16dp"
+                android:textColor="@color/maincolor"
+                android:gravity = "center_vertical"
+                android:layout_gravity="center"/>
+            <EditText
+                android:fontFamily="@font/suitregular"
+                android:textColor="@color/graycolor"
+                android:padding="10dp"
+                android:textSize="12dp"
+                android:id="@+id/Edit_addmm"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="MM"
+                android:gravity="top"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/suitregular"
+                android:text=" : "
+                android:id="@+id/Text_date2"
+                android:textSize="16dp"
+                android:textColor="@color/maincolor"
+                android:gravity = "center_vertical"
+                android:layout_gravity="center"/>
+            <EditText
+                android:fontFamily="@font/suitregular"
+                android:textColor="@color/graycolor"
+                android:padding="10dp"
+                android:textSize="12dp"
+                android:id="@+id/Edit_adddd"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="DD"
                 android:gravity="top"/>
         </LinearLayout>
 
@@ -112,7 +152,7 @@
             </LinearLayout>
 
             <EditText
-                android:fontFamily="@font/suitregular"
+                android:fontFamily="@font/suitbold"
                 android:textColor="@color/graycolor"
                 android:padding="10dp"
                 android:textSize="12dp"
