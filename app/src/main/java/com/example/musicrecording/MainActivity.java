@@ -16,8 +16,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Spinner spinner;
     Spinner spinnermood;
+
+    ArrayAdapter<CharSequence> adapter1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,16 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageButton Btn_Month = (ImageButton) findViewById(R.id.Btn_HomeMonth);
         Btn_Month.setOnClickListener(this);
 
-        //무드 혹은 달 고르는 스피너
-        /*ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-                this,R.array.array_moodormonth, android.R.layout.simple_dropdown_item_1line
-        );
-        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spinner = (Spinner)findViewById(R.id.Spinner_MoodorMonth);
-        spinner.setAdapter(adapter);*/
 
         //무드 선택하면 무드 스피너, 달 선택하면 달 스피너
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(
+        adapter1 = ArrayAdapter.createFromResource(
                 this,R.array.array_selectmood, android.R.layout.simple_dropdown_item_1line
         );
         adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
@@ -73,22 +67,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(searchpage);
                 break;
 
-            case R.id.Spinner_SelectMoodorMonth:
-                //스피너에서 mood를 골랐을 때
-                //안 돌아감...
-                if (spinner.getSelectedItem().toString() == "Month"){
-                    Toast message = Toast.makeText(getApplicationContext(),"클릭됨",Toast.LENGTH_LONG);
-                    message.show();
-
-                    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+            case R.id.Btn_HomeMonth:
+                //month를 골랐을 때
+                    adapter1 = ArrayAdapter.createFromResource(
                             this,R.array.array_selectmonth, android.R.layout.simple_dropdown_item_1line
                     );
-                    adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+                    adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
                     spinnermood = (Spinner)findViewById(R.id.Spinner_SelectMoodorMonth);
-                    spinnermood.setAdapter(adapter);
+                    spinnermood.setAdapter(adapter1);
 
+                break;
+            case R.id.Btn_HomeMood:
+                //mood를 골랐을 때
+                adapter1 = ArrayAdapter.createFromResource(
+                        this,R.array.array_selectmood, android.R.layout.simple_dropdown_item_1line
+                );
+                adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+                spinnermood = (Spinner)findViewById(R.id.Spinner_SelectMoodorMonth);
+                spinnermood.setAdapter(adapter1);
 
-                }
                 break;
         }
 
