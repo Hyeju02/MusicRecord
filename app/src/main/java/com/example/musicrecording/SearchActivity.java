@@ -14,10 +14,16 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class SearchActivity extends Activity implements View.OnClickListener {
+
+    TextView searchlist;
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_activity);
+
+        searchlist =  (TextView) findViewById(R.id.search_textview);
 
         //홈으로 돌아가는 버튼
         ImageButton Btn_backtohome = (ImageButton) findViewById(R.id.Btn_BF_toHome3);
@@ -41,26 +47,29 @@ public class SearchActivity extends Activity implements View.OnClickListener {
             case R.id.Btn_Search:
                 //검색
                 EditText searchname = findViewById(R.id.Edit_SearchKey);
-                String searchkey = searchname.getText().toString();
+                String[] searchkey = searchname.getText().toString().split(" ");
 
-                /*int i=0;
+                int i=0;
 
                 try {
                     DBManager dbmgr = new DBManager(this);
                     SQLiteDatabase sdb = dbmgr.getReadableDatabase();
-                    Cursor cursor = sdb.rawQuery("select searchkey from music", null);
+                    Cursor cursor = sdb.rawQuery("select '%s' from music", searchkey);
 
                     while (cursor.moveToNext()){
 
-                        String nationname = cursor.getString(0);
-                        String gender = cursor.getString(1);
-                        String sms = cursor.getString(2);
-                        String interest = cursor.getString(3);
+                        String year = cursor.getString(0);
+                        String month = cursor.getString(1);
+                        String day = cursor.getString(2);
+                        String title = cursor.getString(3);
+                        String singer = cursor.getString(4);
+                        String mood = cursor.getString(5);
+                        String url = cursor.getString(6);
+                        String diary = cursor.getString(7);
 
-                        tv_list.append(nationname + "\n");
-                        tv_list.append(gender + "\n");
-                        tv_list.append(sms +"\n");
-                        tv_list.append(interest +"\n\n");
+
+                        searchlist.append(title + "\n");
+                        searchlist.append(singer + "\n");
 
                         i++;
 
@@ -69,11 +78,11 @@ public class SearchActivity extends Activity implements View.OnClickListener {
                     cursor.close();
                     dbmgr.close();
                 } catch (SQLiteException e){
-                    tv_list.append("DB ERROR!!");
+                    searchlist.append("DB ERROR!!");
                 }
                 if (i==0) {
-                    tv_list.append("No information!!\n");
-                }*/
+                    searchlist.append("No information!!\n");
+                }
 
         }
     }
