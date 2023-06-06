@@ -19,6 +19,8 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
 
     Spinner spinner;
     private DBManager dbmgr;
+
+
     public void onCreate(Bundle savedInstanceState){
 
         super.onCreate(savedInstanceState);
@@ -99,7 +101,7 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
                         break;
                     } else {
                         //(0531)execSQL str_date에서 str_dateyy, datemm, datedd로 수정
-                        sdb.execSQL("insert into music values('" + str_dateyy + "', '" + str_datemm + "', '" + str_datedd + "', '" + str_title + "','" + str_singer + "','" + str_mood + "','" + str_url + "','" + str_diary + "';");
+                        sdb.execSQL("insert into music values('" +str_dateyy+ "', '" +str_datemm+ "', '" +str_datedd+ "', '" +str_title+ "','" +str_singer+ "','" +str_mood+ "','" +str_url+ "','" +str_diary+ "');");
                         dbmgr.close();
 
                         Intent it = new Intent(this, MainActivity.class);
@@ -108,6 +110,7 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
                         break;
                     }
                 }catch (SQLException e){}
+
 
         }
     }
