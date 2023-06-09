@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -19,7 +20,7 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
 
     Spinner spinner;
     private DBManager dbmgr;
-
+    int showcover = 0;
 
     public void onCreate(Bundle savedInstanceState){
 
@@ -46,6 +47,43 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinner = (Spinner)findViewById(R.id.Spinner_SelectMood);
         spinner.setAdapter(adapter);
+
+        //커버 미니 이미지뷰
+        ImageView minicover;
+        minicover = (ImageView)findViewById(R.id.Imageview_minicover);
+
+        //커버 셀렉한 값 받기
+        Intent intent = getIntent();
+        showcover = intent.getIntExtra("cover", 0);
+
+        //셀렉 값에 따라 컬러 표시
+        if (showcover == 1){
+            minicover.setImageResource(R.drawable.default_covermood1);
+        }
+        else if (showcover == 2){
+            minicover.setImageResource(R.drawable.default_covermood2);
+        }
+        else if (showcover == 3){
+            minicover.setImageResource(R.drawable.default_covermood3);
+        }
+        else if (showcover == 4){
+            minicover.setImageResource(R.drawable.default_covermood4);
+        }
+        else if (showcover == 5){
+            minicover.setImageResource(R.drawable.default_covermood5);
+        }
+        else if (showcover == 6){
+            minicover.setImageResource(R.drawable.default_covermood6);
+        }
+        else if (showcover == 7){
+            minicover.setImageResource(R.drawable.default_covermood7);
+        }
+        else if (showcover == 8){
+            minicover.setImageResource(R.drawable.default_covermood8);
+        }
+        else{
+            minicover.setImageResource(R.drawable.default_minicover);
+        }
 
 
     }
@@ -77,6 +115,9 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
 
         String str_mood = spinner.getSelectedItem().toString();
 
+        int str_cover = showcover;
+
+
         dbmgr = new DBManager(this);
         SQLiteDatabase sdb;
         sdb = dbmgr.getWritableDatabase();
@@ -101,7 +142,7 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
                         break;
                     } else {
                         //(0531)execSQL str_date에서 str_dateyy, datemm, datedd로 수정
-                        sdb.execSQL("insert into music values('" +str_dateyy+ "', '" +str_datemm+ "', '" +str_datedd+ "', '" +str_title+ "','" +str_singer+ "','" +str_mood+ "','" +str_url+ "','" +str_diary+ "');");
+                        sdb.execSQL("insert into music values('" +str_dateyy+ "', '" +str_datemm+ "', '" +str_datedd+ "', '" +str_title+ "','" +str_singer+ "','" +str_mood+ "','" +str_url+ "','" +str_diary+ "', '" +str_cover+ "');");
                         dbmgr.close();
 
                         Intent it = new Intent(this, MainActivity.class);
@@ -114,4 +155,5 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
 
         }
     }
+
 }

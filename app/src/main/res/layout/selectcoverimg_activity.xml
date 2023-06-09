@@ -49,15 +49,6 @@
             <ImageButton
                 android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
-                android:id = "@+id/Btn_Personalimg"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:src="@drawable/default_selectpersonal"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"/>
-            <ImageButton
-                android:background="@android:color/transparent"
-                android:layout_marginHorizontal="10dp"
                 android:id = "@+id/Btn_Mood1"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
@@ -73,14 +64,6 @@
                 android:src="@drawable/default_covermood2"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="10dp">
             <ImageButton
                 android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
@@ -90,6 +73,15 @@
                 android:src="@drawable/default_covermood3"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
             <ImageButton
                 android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
@@ -108,14 +100,6 @@
                 android:src="@drawable/default_covermood5"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="10dp">
             <ImageButton
                 android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
@@ -125,6 +109,15 @@
                 android:src="@drawable/default_covermood6"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
             <ImageButton
                 android:background="@android:color/transparent"
                 android:layout_marginHorizontal="10dp"
@@ -141,6 +134,13 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/default_covermood8"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
         </LinearLayout>

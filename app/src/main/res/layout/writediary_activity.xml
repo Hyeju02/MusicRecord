@@ -175,6 +175,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:orientation="horizontal">
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/default_minicover"
+                    android:id = "@+id/Imageview_minicover"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="10dp"/>
                 <View
                     android:layout_width="0dp"
                     android:layout_height="0dp"

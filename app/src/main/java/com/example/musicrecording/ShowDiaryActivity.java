@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,11 +20,16 @@ public class ShowDiaryActivity extends AppCompatActivity implements View.OnClick
     String singername;
     ImageButton Btn_PlayDiaryUrl;
 
+    ImageView diarycover;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.showdiary_activity);
+
+        //다이어리 커버사진
+        diarycover = (ImageView)findViewById(R.id.ImageView_DiaryCover);
 
         //아이템 누른 것의 타이틀 정보 intent로 가져오기
         Intent it = getIntent();
@@ -39,6 +45,7 @@ public class ShowDiaryActivity extends AppCompatActivity implements View.OnClick
         //유튜브 링크 재생 버튼
         Btn_PlayDiaryUrl = (ImageButton) findViewById(R.id.Btn_PlayDiaryUrl);
         Btn_PlayDiaryUrl.setOnClickListener(this);
+
 
     }
 
