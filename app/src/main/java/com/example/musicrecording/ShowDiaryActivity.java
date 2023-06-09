@@ -25,8 +25,13 @@ public class ShowDiaryActivity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.showdiary_activity);
 
+        //아이템 누른 것의 타이틀 정보 intent로 가져오기
+        Intent it = getIntent();
+        String str_title = it.getStringExtra("title");
+
         //텍스트뷰 스트링으로 가져오기(song, singer)
         songtextView = (TextView)findViewById(R.id.Text_Song);
+        songtextView.setText(str_title); //타이틀 명 설정
         singertextView = (TextView)findViewById(R.id.Text_Singer);
         songname = songtextView.getText().toString();
         singername = singertextView.getText().toString();

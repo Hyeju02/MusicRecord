@@ -54,7 +54,7 @@ public class SearchActivity extends Activity implements View.OnClickListener {
                 try {
                     DBManager dbmgr = new DBManager(this);
                     SQLiteDatabase sdb = dbmgr.getReadableDatabase();
-                    Cursor cursor = sdb.rawQuery("select '%s' from music", searchkey);
+                    Cursor cursor = sdb.rawQuery("SELECT * From music WHERE title and singer LIKE '%s'", searchkey);
 
                     while (cursor.moveToNext()){
 
@@ -68,7 +68,7 @@ public class SearchActivity extends Activity implements View.OnClickListener {
                         String diary = cursor.getString(7);
 
 
-                        searchlist.append(title + "\n");
+                        searchlist.append(title + "\t");
                         searchlist.append(singer + "\n");
 
                         i++;

@@ -21,6 +21,15 @@ public class SelectCover_Activity extends Activity implements View.OnClickListen
     ImageButton mood7;
     ImageButton mood8;
 
+    public boolean m1;
+    public boolean m2;
+    public boolean m3;
+    public boolean m4;
+    public boolean m5;
+    public boolean m6;
+    public boolean m7;
+    public boolean m8;
+
 
 
     public void onCreate(Bundle savedInstanceState){
@@ -61,6 +70,7 @@ public class SelectCover_Activity extends Activity implements View.OnClickListen
                 onBackPressed();
                 break;
 
+
             case R.id.Btn_Personalimg:
                 //갤러리에 접근하는 코드
                 break;
@@ -68,106 +78,171 @@ public class SelectCover_Activity extends Activity implements View.OnClickListen
             case R.id.Btn_Mood1:
                 //이미지 체크표시
                 mood1.setImageResource(R.drawable.clicked_covermood1);
+                m1 = true;
                 //다른 체크 삭제
                 mood2.setImageResource(R.drawable.default_covermood2);
+                m2 = false;
                 mood3.setImageResource(R.drawable.default_covermood3);
+                m3 = false;
                 mood4.setImageResource(R.drawable.default_covermood4);
+                m4 = false;
                 mood5.setImageResource(R.drawable.default_covermood5);
+                m5 = false;
                 mood6.setImageResource(R.drawable.default_covermood6);
+                m6 = false;
                 mood7.setImageResource(R.drawable.default_covermood7);
+                m7 = false;
                 mood8.setImageResource(R.drawable.default_covermood8);
-                break;
+                m8 = false;
+
+
 
 
             case R.id.Btn_Mood2:
                 //이미지 체크표시
                 mood2.setImageResource(R.drawable.clicked_covermood2);
+                m2 = true;
                 //다른 체크 삭제
                 mood1.setImageResource(R.drawable.default_covermood1);
+                m1 = false;
                 mood3.setImageResource(R.drawable.default_covermood3);
+                m3 = false;
                 mood4.setImageResource(R.drawable.default_covermood4);
+                m4 = false;
                 mood5.setImageResource(R.drawable.default_covermood5);
+                m5 = false;
                 mood6.setImageResource(R.drawable.default_covermood6);
+                m6 = false;
                 mood7.setImageResource(R.drawable.default_covermood7);
+                m7 = false;
                 mood8.setImageResource(R.drawable.default_covermood8);
+                m8 = false;
                 break;
 
             case R.id.Btn_Mood3:
                 //이미지 체크표시
                 mood3.setImageResource(R.drawable.clicked_covermood3);
+                m3 = true;
                 //다른 체크 삭제
                 mood2.setImageResource(R.drawable.default_covermood2);
+                m2 = false;
                 mood1.setImageResource(R.drawable.default_covermood1);
+                m1 = false;
                 mood4.setImageResource(R.drawable.default_covermood4);
+                m4 = false;
                 mood5.setImageResource(R.drawable.default_covermood5);
+                m5 = false;
                 mood6.setImageResource(R.drawable.default_covermood6);
+                m6 = false;
                 mood7.setImageResource(R.drawable.default_covermood7);
+                m7 = false;
                 mood8.setImageResource(R.drawable.default_covermood8);
+                m8 = false;
                 break;
 
             case R.id.Btn_Mood4:
                 //이미지 체크표시
                 mood4.setImageResource(R.drawable.clicked_covermood4);
+                m4 = true;
                 //다른 체크 삭제
                 mood2.setImageResource(R.drawable.default_covermood2);
+                m2 = false;
                 mood3.setImageResource(R.drawable.default_covermood3);
+                m3 = false;
                 mood1.setImageResource(R.drawable.default_covermood1);
+                m1 = false;
                 mood5.setImageResource(R.drawable.default_covermood5);
+                m5 = false;
                 mood6.setImageResource(R.drawable.default_covermood6);
+                m6 = false;
                 mood7.setImageResource(R.drawable.default_covermood7);
+                m7 = false;
                 mood8.setImageResource(R.drawable.default_covermood8);
+                m8 = false;
                 break;
 
             case R.id.Btn_Mood5:
                 //이미지 체크표시
                 mood5.setImageResource(R.drawable.clicked_covermood5);
+                m5 = true;
                 //다른 체크 삭제
                 mood2.setImageResource(R.drawable.default_covermood2);
+                m2 = false;
                 mood3.setImageResource(R.drawable.default_covermood3);
+                m3 = false;
                 mood4.setImageResource(R.drawable.default_covermood4);
+                m4 = false;
                 mood1.setImageResource(R.drawable.default_covermood1);
+                m1 = false;
                 mood6.setImageResource(R.drawable.default_covermood6);
+                m6 = false;
                 mood7.setImageResource(R.drawable.default_covermood7);
+                m7 = false;
                 mood8.setImageResource(R.drawable.default_covermood8);
+                m8 = false;
                 break;
 
             case R.id.Btn_Mood6:
                 //이미지 체크표시
                 mood6.setImageResource(R.drawable.clicked_covermood6);
+                m6 = true;
                 //다른 체크 삭제
                 mood2.setImageResource(R.drawable.default_covermood2);
+                m2 = false;
                 mood3.setImageResource(R.drawable.default_covermood3);
+                m3 = false;
                 mood4.setImageResource(R.drawable.default_covermood4);
+                m4 = false;
                 mood5.setImageResource(R.drawable.default_covermood5);
+                m5 = false;
                 mood1.setImageResource(R.drawable.default_covermood1);
+                m1 = false;
                 mood7.setImageResource(R.drawable.default_covermood7);
+                m7 = false;
                 mood8.setImageResource(R.drawable.default_covermood8);
+                m8 = false;
                 break;
 
             case R.id.Btn_Mood7:
                 //이미지 체크표시
                 mood7.setImageResource(R.drawable.clicked_covermood7);
+                m7 = true;
                 //다른 체크 삭제
                 mood2.setImageResource(R.drawable.default_covermood2);
+                m2 = false;
                 mood3.setImageResource(R.drawable.default_covermood3);
+                m3 = false;
                 mood4.setImageResource(R.drawable.default_covermood4);
+                m4 = false;
                 mood5.setImageResource(R.drawable.default_covermood5);
+                m5 = false;
                 mood6.setImageResource(R.drawable.default_covermood6);
+                m6 = false;
                 mood1.setImageResource(R.drawable.default_covermood1);
+                m1 = false;
                 mood8.setImageResource(R.drawable.default_covermood8);
+                m8 = false;
                 break;
 
             case R.id.Btn_Mood8:
                 //이미지 체크표시
                 mood8.setImageResource(R.drawable.clicked_covermood8);
+                m8 = true;
                 //다른 체크 삭제
                 mood2.setImageResource(R.drawable.default_covermood2);
+                m2 = false;
                 mood3.setImageResource(R.drawable.default_covermood3);
+                m3 = false;
                 mood4.setImageResource(R.drawable.default_covermood4);
+                m4 = false;
                 mood5.setImageResource(R.drawable.default_covermood5);
+                m5 = false;
                 mood6.setImageResource(R.drawable.default_covermood6);
+                m6 = false;
                 mood7.setImageResource(R.drawable.default_covermood7);
+                m7 = false;
                 mood1.setImageResource(R.drawable.default_covermood1);
+                m1 = false;
                 break;
 
 
