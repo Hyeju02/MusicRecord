@@ -45,7 +45,7 @@
             android:paddingVertical="30dp">
             <ImageView
                 android:background="@android:color/transparent"
-                android:src="@drawable/img_covermood7"
+                android:src="@drawable/default_covermood7"
                 android:id = "@+id/ImageView_DiaryCover"
                 android:layout_width="215dp"
                 android:layout_height="215dp"
