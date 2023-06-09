@@ -596,6 +596,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
+        //리스트 아이템 클릭했을 때
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView parent, View v, int position, long id) {
+
+                //클릭한 타이틀 이름
+                String title = (String) parent.getItemAtPosition(position).toString();
+
+                //intent로 상세페이지에 정보 넘겨줌
+                Intent intent = new Intent(v.getContext(), ShowDiaryActivity.class);
+                intent.putExtra("title", title);
+
+                startActivity(intent);
+            }
+
+        });
 
 
         //다이어리 새로 작성하는 버튼
