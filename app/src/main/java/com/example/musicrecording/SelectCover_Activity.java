@@ -122,6 +122,7 @@ public class SelectCover_Activity extends Activity implements View.OnClickListen
                 mood6.setImageResource(R.drawable.default_covermood6);
                 mood7.setImageResource(R.drawable.default_covermood7);
                 mood8.setImageResource(R.drawable.default_covermood8);
+                break;
 
 
             case R.id.Btn_Mood2:
