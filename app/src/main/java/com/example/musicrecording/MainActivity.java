@@ -1,6 +1,8 @@
 package com.example.musicrecording;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -78,10 +80,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String diary = cursor.getString(7);
                         String cover = cursor.getString(8);
 
+
                         if (mood.equals("Happy")){
                             adapter.addItem(null, title, month, day);
                         }
-
                         i++;
                     }
                     listView.setAdapter(adapter);
