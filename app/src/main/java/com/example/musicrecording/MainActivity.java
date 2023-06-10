@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         DBManager dbmgr = new DBManager(this);
         SQLiteDatabase sdb = dbmgr.getReadableDatabase();
 
+
         //스피너
         spinnermood.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
 
                         if (mood.equals("Happy")){
                             adapter.addItem(null, title, month, day);
@@ -104,6 +106,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (mood.equals("Mellow")){
                             adapter.addItem(null, title, month, day);
@@ -133,6 +137,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (mood.equals("Sorrow")){
                             adapter.addItem(null, title, month, day);
@@ -162,6 +168,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (mood.equals("SO-SO")){
                             adapter.addItem(null, title, month, day);
@@ -192,6 +200,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (mood.equals("Mad")){
                             adapter.addItem(null, title, month, day);
@@ -221,6 +231,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (mood.equals("Gloomy")){
                             adapter.addItem(null, title, month, day);
@@ -255,6 +267,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (month.equals("01") || month.equals("1")){
                             adapter.addItem(null, title, month, day);
@@ -284,6 +298,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (month.equals("02") || month.equals("2")){
                             adapter.addItem(null, title, month, day);
@@ -313,6 +329,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (month.equals("03") || month.equals("3")){
                             adapter.addItem(null, title, month, day);
@@ -342,6 +360,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (month.equals("04") || month.equals("4")){
                             adapter.addItem(null, title, month, day);
@@ -372,6 +392,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (month.equals("05") || month.equals("5")){
                             adapter.addItem(null, title, month, day);
@@ -401,6 +423,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (month.equals("06") || month.equals("6")){
                             adapter.addItem(null, title, month, day);
@@ -430,6 +454,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
+
 
                         if (month.equals("07") || month.equals("7")){
                             adapter.addItem(null, title, month, day);
@@ -459,6 +485,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
 
                         if (month.equals("08") || month.equals("8")){
                             adapter.addItem(null, title, month, day);
@@ -488,6 +515,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
 
                         if (month.equals("09") || month.equals("9")){
                             adapter.addItem(null, title, month, day);
@@ -517,6 +545,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
 
                         if (month.equals("10")){
                             adapter.addItem(null, title, month, day);
@@ -546,6 +575,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
 
                         if (month.equals("11")){
                             adapter.addItem(null, title, month, day);
@@ -575,6 +605,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String mood = cursor.getString(5);
                         String url = cursor.getString(6);
                         String diary = cursor.getString(7);
+                        String cover = cursor.getString(8);
 
                         if (month.equals("12")){
                             adapter.addItem(null, title, month, day);

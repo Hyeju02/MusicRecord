@@ -47,14 +47,21 @@ public class SearchActivity extends Activity implements View.OnClickListener {
             case R.id.Btn_Search:
                 //검색
                 EditText searchname = findViewById(R.id.Edit_SearchKey);
-                String[] searchkey = searchname.getText().toString().split(" ");
+                String searchkey = searchname.getText().toString();  // 사용자로부터 입력 받는 값
+
+
 
                 int i=0;
 
                 try {
+
                     DBManager dbmgr = new DBManager(this);
-                    SQLiteDatabase sdb = dbmgr.getReadableDatabase();
-                    Cursor cursor = sdb.rawQuery("SELECT * From music WHERE title and singer LIKE '%s'", searchkey);
+                    SQLiteDatabase db = dbmgr.getReadableDatabase();
+                    String sql = "SELECT * FROM music WHERE title LIKE ? OR singer LIKE ?";
+                    String[] selectionArgs = { "%" + searchkey + "%", "%" + searchkey + "%" };
+                    Cursor cursor = db.rawQuery(sql, selectionArgs);
+
+
 
                     while (cursor.moveToNext()){
 
@@ -83,6 +90,8 @@ public class SearchActivity extends Activity implements View.OnClickListener {
                 if (i==0) {
                     searchlist.append("No information!!\n");
                 }
+                break;
+
 
         }
     }
