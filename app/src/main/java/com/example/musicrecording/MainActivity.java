@@ -638,7 +638,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //intent로 상세페이지에 정보 넘겨줌
                 Intent intent = new Intent(v.getContext(), ShowDiaryActivity.class);
                 intent.putExtra("title", title);
-
                 startActivity(intent);
             }
 

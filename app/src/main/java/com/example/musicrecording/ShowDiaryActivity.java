@@ -51,7 +51,7 @@ public class ShowDiaryActivity extends AppCompatActivity implements View.OnClick
         Btn_PlayDiaryUrl.setOnClickListener(this);
 
 
-
+/*
         //가져온 title 정보로 데이터베이스에서 검색하기
         DBManager dbmgr = new DBManager(this);
         SQLiteDatabase db = dbmgr.getReadableDatabase();
@@ -83,7 +83,7 @@ public class ShowDiaryActivity extends AppCompatActivity implements View.OnClick
         }
         cursor.close();
         dbmgr.close();
-
+*/
     }
 
     @Override

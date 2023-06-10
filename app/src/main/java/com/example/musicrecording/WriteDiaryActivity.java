@@ -22,7 +22,7 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
     Spinner spinner;
     private DBManager dbmgr;
     int showcover = 0;
-
+    int str_cover;
     String str_dateyy;
     String str_datemm;
     String str_datedd;
@@ -161,7 +161,7 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
         et_mood = spinner.getSelectedItem().toString();
         String str_mood = et_mood;
 
-        int str_cover = showcover;
+        str_cover = showcover;
 
 
         dbmgr = new DBManager(this);
