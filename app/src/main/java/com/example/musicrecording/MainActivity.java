@@ -80,9 +80,57 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String diary = cursor.getString(7);
                         String cover = cursor.getString(8);
 
-
+                        int circlenum = Integer.parseInt(cover);
+                        //1-1
                         if (mood.equals("Happy")){
-                            adapter.addItem(null, title, month, day);
+                            //cover db 값에 따라 동그라미 설정
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
                         i++;
                     }
@@ -110,9 +158,57 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String diary = cursor.getString(7);
                         String cover = cursor.getString(8);
 
+                        //2-2
+                        int circlenum = Integer.parseInt(cover);
 
                         if (mood.equals("Mellow")){
-                            adapter.addItem(null, title, month, day);
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -141,9 +237,57 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String diary = cursor.getString(7);
                         String cover = cursor.getString(8);
 
+                        //3-3
+                        int circlenum = Integer.parseInt(cover);
 
                         if (mood.equals("Sorrow")){
-                            adapter.addItem(null, title, month, day);
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -172,9 +316,57 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String diary = cursor.getString(7);
                         String cover = cursor.getString(8);
 
+                        //4-5
+                        int circlenum = Integer.parseInt(cover);
 
                         if (mood.equals("SO-SO")){
-                            adapter.addItem(null, title, month, day);
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -204,9 +396,57 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String diary = cursor.getString(7);
                         String cover = cursor.getString(8);
 
+                        //5-6
+                        int circlenum = Integer.parseInt(cover);
 
                         if (mood.equals("Mad")){
-                            adapter.addItem(null, title, month, day);
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -235,9 +475,57 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String diary = cursor.getString(7);
                         String cover = cursor.getString(8);
 
+                        //6-8
+                        int circlenum = Integer.parseInt(cover);
 
                         if (mood.equals("Gloomy")){
-                            adapter.addItem(null, title, month, day);
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -271,9 +559,58 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String diary = cursor.getString(7);
                         String cover = cursor.getString(8);
 
-
                         if (month.equals("01") || month.equals("1")){
-                            adapter.addItem(null, title, month, day);
+
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -304,7 +641,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
                         if (month.equals("02") || month.equals("2")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -335,7 +721,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
                         if (month.equals("03") || month.equals("3")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -366,7 +801,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
                         if (month.equals("04") || month.equals("4")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -398,7 +882,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
                         if (month.equals("05") || month.equals("5")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -460,7 +993,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
                         if (month.equals("07") || month.equals("7")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -490,7 +1072,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String cover = cursor.getString(8);
 
                         if (month.equals("08") || month.equals("8")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -520,7 +1151,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String cover = cursor.getString(8);
 
                         if (month.equals("09") || month.equals("9")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -550,7 +1230,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String cover = cursor.getString(8);
 
                         if (month.equals("10")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -580,7 +1309,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String cover = cursor.getString(8);
 
                         if (month.equals("11")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
@@ -610,7 +1388,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         String cover = cursor.getString(8);
 
                         if (month.equals("12")){
-                            adapter.addItem(null, title, month, day);
+                            //1월
+                            int circlenum = Integer.parseInt(cover);
+
+                            //cover db 값에 따라 동그라미 설정
+                            switch (circlenum){
+                                case 1 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 2 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    break;
+                                case 4 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    break;
+                                case 5 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    break;
+                                case 6 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                case 7 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
+                                    break;
+                                case 8 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    break;
+                                default :
+                                    if (mood.equals("Happy") ){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
+                                    }
+                                    else if (mood.equals("Mellow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
+                                    }
+                                    else if (mood.equals("SO-SO")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    }
+                                    else if (mood.equals("Sorrow")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    }
+                                    else if (mood.equals("Gloomy")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    }
+                                    else if (mood.equals("Mad")){
+                                        adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    }
+                                    break;
+                            }
                         }
 
                         i++;
