@@ -23,6 +23,15 @@ public class SelectCover_Activity extends Activity implements View.OnClickListen
 
     int covernumber;
 
+    String str_dateyy;
+    String str_datemm;
+    String str_datedd;
+    String str_title;
+    String str_singer;
+    String str_url;
+    String str_diary;
+    String str_mood;
+    Integer str_cover;
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -50,6 +59,38 @@ public class SelectCover_Activity extends Activity implements View.OnClickListen
         mood7.setOnClickListener(this);
         mood8.setOnClickListener(this);
 
+        //이전에 썼던 데이터
+        Intent write = getIntent();
+         str_dateyy = write.getStringExtra("dateyy");
+         str_datemm = write.getStringExtra("datemm");
+         str_datedd = write.getStringExtra("datedd");
+         str_title = write.getStringExtra("title");
+         str_singer = write.getStringExtra("singer");
+         str_url = write.getStringExtra("url");
+         str_diary = write.getStringExtra("diary");
+         str_mood = write.getStringExtra("mood");
+         str_cover = write.getIntExtra("cover", 0);
+        covernumber = str_cover;
+
+        //이전에 선택한 커버를 첫화면에서 보여주기
+        if (covernumber == 1){
+            mood1.setImageResource(R.drawable.clicked_covermood1);
+        } else if (covernumber == 2) {
+            mood2.setImageResource(R.drawable.clicked_covermood2);
+        }else if (covernumber == 3) {
+            mood3.setImageResource(R.drawable.clicked_covermood3);
+        }else if (covernumber == 4) {
+            mood4.setImageResource(R.drawable.clicked_covermood4);
+        }else if (covernumber == 5) {
+            mood5.setImageResource(R.drawable.clicked_covermood5);
+        }else if (covernumber == 6) {
+            mood6.setImageResource(R.drawable.clicked_covermood6);
+        }else if (covernumber == 7) {
+            mood7.setImageResource(R.drawable.clicked_covermood7);
+        }else if (covernumber == 8) {
+            mood8.setImageResource(R.drawable.clicked_covermood8);
+        }
+
     }
 
     public void onClick(View v){
@@ -57,9 +98,16 @@ public class SelectCover_Activity extends Activity implements View.OnClickListen
             case R.id.Btn_BF_toWriteDiary:
                 //커버넘버전달
                 Intent intent = new Intent(SelectCover_Activity.this, WriteDiaryActivity.class);
+                intent.putExtra("dateyy", str_dateyy);
+                intent.putExtra("datemm", str_datemm);
+                intent.putExtra("datedd", str_datedd);
+                intent.putExtra("title", str_title);
+                intent.putExtra("singer", str_singer);
+                intent.putExtra("url", str_url);
+                intent.putExtra("diary", str_diary);
+                intent.putExtra("mood", str_mood);
                 intent.putExtra("cover", covernumber);
                 startActivity(intent);
-                onBackPressed();
                 break;
 
             case R.id.Btn_Mood1:
