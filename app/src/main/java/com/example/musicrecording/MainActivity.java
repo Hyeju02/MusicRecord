@@ -636,9 +636,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String title = (String) parent.getItemAtPosition(position).toString();
 
                 //intent로 상세페이지에 정보 넘겨줌
-                Intent intent = new Intent(v.getContext(), ShowDiaryActivity.class);
-                intent.putExtra("title", title);
-                startActivity(intent);
+                Intent intent1 = new Intent(v.getContext(), ShowDiaryActivity.class);
+                intent1.putExtra("selecttitle", title);
+                startActivity(intent1);
             }
 
         });

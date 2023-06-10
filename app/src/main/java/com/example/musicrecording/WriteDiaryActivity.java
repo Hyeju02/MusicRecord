@@ -199,7 +199,7 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
                         break;
                     } else {
                         //(0531)execSQL str_date에서 str_dateyy, datemm, datedd로 수정
-                        sdb.execSQL("insert into music values('" +str_dateyy+ "', '" +str_datemm+ "', '" +str_datedd+ "', '" +str_title+ "','" +str_singer+ "','" +str_mood+ "','" +str_url+ "','" +str_diary+ "', '" +str_cover+ "');");
+                        sdb.execSQL("insert into music values('" +str_dateyy+ "', '" +str_datemm+ "', '" +str_datedd+ "', '" +str_title+ "','" +str_singer+ "','" +str_mood+ "','" +str_url+ "','" +str_diary+ "','" +str_cover+ "');");
                         dbmgr.close();
 
 
