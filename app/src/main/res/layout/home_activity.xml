@@ -16,15 +16,26 @@
             android:layout_height="42dp"
             android:orientation="horizontal">
 
-            <TextView
+            <EditText
+                android:background="@null"
                 android:fontFamily="@font/suitbold"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Diary Title"
+                android:hint="Name Your Diary"
                 android:id="@+id/Text_DiaryTitle"
                 android:textSize="16dp"
                 android:textColor="@color/maincolor"
                 android:gravity = "center_vertical"
+                android:layout_gravity="center"/>
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="12dp"
+                android:id = "@+id/Btn_Savetitle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/titlesave"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
             <View
                 android:layout_width="0dp"
@@ -51,7 +62,9 @@
                 android:layout_gravity="center"/>
 
         </LinearLayout>
-
+        <View
+            android:layout_width="0dp"
+            android:layout_height="24dp"/>
         <LinearLayout
             android:orientation = "horizontal"
             android:gravity="left"
@@ -79,7 +92,9 @@
                 android:scaleType="fitCenter"/>
 
         </LinearLayout>
-
+        <View
+            android:layout_width="0dp"
+            android:layout_height="16dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="42dp">
@@ -88,7 +103,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="42dp"/>
         </LinearLayout>
-
+        <View
+            android:layout_width="0dp"
+            android:layout_height="16dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
