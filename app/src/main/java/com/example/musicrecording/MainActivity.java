@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //DB
         DBManager dbmgr = new DBManager(this);
         SQLiteDatabase sdb = dbmgr.getReadableDatabase();
-
         /*//DB title
         DBManager dbmgrtitle = new DBManager(this);
         SQLiteDatabase sdbtitle = dbmgr.getReadableDatabase();
