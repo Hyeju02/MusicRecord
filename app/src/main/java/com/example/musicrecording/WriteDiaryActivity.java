@@ -172,7 +172,8 @@ public class WriteDiaryActivity extends Activity implements View.OnClickListener
 
         switch (v.getId()){
             case R.id.Btn_BF_toHome:
-                onBackPressed();
+                Intent home = new Intent(this, MainActivity.class);
+                startActivity(home);
                 break;
 
             case R.id.Btn_SelectCover:
