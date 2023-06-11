@@ -16,27 +16,18 @@
             android:layout_height="42dp"
             android:orientation="horizontal">
 
-            <EditText
-                android:background="@null"
-                android:fontFamily="@font/suitbold"
+            <TextView
+                android:id="@+id/Text_DiaryTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:hint="Name Your Diary"
-                android:id="@+id/Text_DiaryTitle"
-                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:fontFamily="@font/suitbold"
+                android:gravity="center_vertical"
+                android:text="Music Diary"
                 android:textColor="@color/maincolor"
-                android:gravity = "center_vertical"
-                android:layout_gravity="center"/>
-            <ImageButton
-                android:background="@android:color/transparent"
-                android:layout_marginLeft="12dp"
-                android:id = "@+id/Btn_Savetitle"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/titlesave"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center"/>
+                android:textSize="16dp" />
+
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"

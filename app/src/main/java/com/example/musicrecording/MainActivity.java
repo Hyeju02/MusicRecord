@@ -30,12 +30,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ListViewAdapter adapter;
     Spinner spinnermood;
 
+    /*String titlemain;
+
+    EditText title;*/
     ArrayAdapter<CharSequence> adapter1;
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
+
+        //타이틀 이름 수정
+        /*title = (EditText)findViewById(R.id.Text_DiaryTitle);
+        titlemain = title.toString();
+        ImageButton savetitle = (ImageButton) findViewById(R.id.Btn_Savetitle);
+        savetitle.setOnClickListener(this);*/
 
         //어뎁터 연결
         adapter = new ListViewAdapter();
@@ -53,6 +64,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //DB
         DBManager dbmgr = new DBManager(this);
         SQLiteDatabase sdb = dbmgr.getReadableDatabase();
+
+        /*//DB title
+        DBManager dbmgrtitle = new DBManager(this);
+        SQLiteDatabase sdbtitle = dbmgr.getReadableDatabase();
+        sdbtitle.execSQL("insert into musictitle values ('"+titlemain+"');");
+
+        Cursor cursor = sdbtitle.rawQuery("select * from musictitle", null);
+        while (cursor.moveToNext()){
+
+            String titlename = cursor.getString(0);
+            title.setText(titlename);
+
+        }
+        dbmgrtitle.close();
+        cursor.close();
+*/
 
 
         //스피너
@@ -1497,6 +1524,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         switch (v.getId()) {
+            /*case R.id.Btn_Savetitle:
+                titlemain = title.toString();
+                DBManager dbmgr1 = new DBManager(this);
+                SQLiteDatabase sdb1 = dbmgr1.getReadableDatabase();
+                sdb1.execSQL("update musictitle set diarytitle='"+titlemain+"';");
+                dbmgr1.close();
+
+                Intent it = new Intent(this, MainActivity.class);
+                startActivity(it);
+                finish();
+                break;*/
+
             case R.id.Btn_WriteDiary:
                 Intent writediary = new Intent(this, WriteDiaryActivity.class);
                 startActivity(writediary);
