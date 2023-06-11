@@ -90,19 +90,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -168,19 +168,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -247,19 +247,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -326,19 +326,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -406,19 +406,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -485,19 +485,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -570,19 +570,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -650,19 +650,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -730,19 +730,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -810,19 +810,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -891,19 +891,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -1002,19 +1002,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -1081,19 +1081,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -1160,19 +1160,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -1239,19 +1239,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -1318,19 +1318,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
@@ -1397,19 +1397,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
                                     break;
                                 case 2 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood1), title, month, day);
-                                    break;
-                                case 3 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood2), title, month, day);
                                     break;
+                                case 3 :
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood3), title, month, day);
+                                    break;
                                 case 4 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood4), title, month, day);
                                     break;
                                 case 5 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood5), title, month, day);
                                     break;
                                 case 6 :
-                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood8), title, month, day);
+                                    adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood6), title, month, day);
                                     break;
                                 case 7 :
                                     adapter.addItem(ContextCompat.getDrawable(MainActivity.this, R.drawable.circle_mood7), title, month, day);
