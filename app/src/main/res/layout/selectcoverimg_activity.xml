@@ -18,7 +18,7 @@
             <ImageButton
                 android:background="@drawable/beforebtn"
                 android:id = "@+id/Btn_BF_toWriteDiary"
-                android:layout_width="24dp"
+                android:layout_width="14dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
