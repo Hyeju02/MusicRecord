@@ -44,7 +44,7 @@
                     android:fontFamily="@font/suitregular"
                     android:textColor="@color/graycolor"
                     android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
                     android:text="04:02"
                     android:id="@+id/searchdate"
