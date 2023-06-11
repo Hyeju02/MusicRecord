@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ArrayAdapter<CharSequence> adapter1;
 
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
+
 
         //타이틀 이름 수정
         /*title = (EditText)findViewById(R.id.Text_DiaryTitle);
@@ -58,6 +58,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinnermood = (Spinner)findViewById(R.id.Spinner_SelectMoodorMonth);
         spinnermood.setAdapter(adapter1);
+
+        //무드 버튼
+        ImageButton Btn_Mood = (ImageButton) findViewById(R.id.Btn_HomeMood);
+        //달 고르는 버튼
+        ImageButton Btn_Month = (ImageButton) findViewById(R.id.Btn_HomeMonth);
+        Btn_Mood.setOnClickListener(this);
+        Btn_Month.setOnClickListener(this);
 
         //DB
         DBManager dbmgr = new DBManager(this);
@@ -1505,20 +1512,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageButton Btn_search = (ImageButton) findViewById(R.id.Btn_MovetoSearch);
         Btn_search.setOnClickListener(this);
 
-        //무드 버튼
-        ImageButton Btn_Mood = (ImageButton) findViewById(R.id.Btn_HomeMood);
-        Btn_Mood.setOnClickListener(this);
-
-        //달 고르는 버튼
-        ImageButton Btn_Month = (ImageButton) findViewById(R.id.Btn_HomeMonth);
-        Btn_Month.setOnClickListener(this);
-
-
     }
 
     @Override
     public void onClick(View v){
 
+        //무드 버튼
+        ImageButton Btn_Mood = (ImageButton) findViewById(R.id.Btn_HomeMood);
+        //달 고르는 버튼
+        ImageButton Btn_Month = (ImageButton) findViewById(R.id.Btn_HomeMonth);
 
         switch (v.getId()) {
             /*case R.id.Btn_Savetitle:
@@ -1551,6 +1553,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
                     spinnermood = (Spinner)findViewById(R.id.Spinner_SelectMoodorMonth);
                     spinnermood.setAdapter(adapter1);
+                    Btn_Month.setImageResource(R.drawable.clicked_homemonth);
+                    Btn_Mood.setImageResource(R.drawable.default_homemood);
 
                 break;
             case R.id.Btn_HomeMood:
@@ -1561,7 +1565,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
                 spinnermood = (Spinner)findViewById(R.id.Spinner_SelectMoodorMonth);
                 spinnermood.setAdapter(adapter1);
-
+                Btn_Month.setImageResource(R.drawable.default_homemonth);
+                Btn_Mood.setImageResource(R.drawable.clicked_homemood);
                 break;
 
         }

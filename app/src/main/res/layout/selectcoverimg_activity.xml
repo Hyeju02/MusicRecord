@@ -16,12 +16,11 @@
             android:layout_height="42dp"
             android:orientation="horizontal">
             <ImageButton
-                android:background="@android:color/transparent"
+                android:background="@drawable/beforebtn"
                 android:id = "@+id/Btn_BF_toWriteDiary"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/default_before"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:layout_marginRight="10dp"/>

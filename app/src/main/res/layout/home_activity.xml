@@ -22,32 +22,30 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:background="@null"
-                android:fontFamily="@font/suitbold"
+                android:fontFamily="@font/suitsemibold"
                 android:gravity="center_vertical"
-                android:text="Music Diary"
+                android:text="M+ood"
                 android:textColor="@color/maincolor"
-                android:textSize="16dp" />
+                android:textSize="20dp" />
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
             <ImageButton
-                android:background="@android:color/transparent"
+                android:background="@drawable/searchbtn"
                 android:layout_marginRight="10dp"
                 android:id = "@+id/Btn_MovetoSearch"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/default_search"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
             <ImageButton
-                android:background="@android:color/transparent"
+                android:background="@drawable/writebtn"
                 android:id = "@+id/Btn_WriteDiary"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/default_writediary"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"/>

@@ -15,12 +15,11 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <ImageButton
-                android:background="@android:color/transparent"
+                android:background="@drawable/beforebtn"
                 android:id = "@+id/Btn_BF_toHome3"
-                android:layout_width="24dp"
+                android:layout_width="14dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/default_before"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <EditText
@@ -36,11 +35,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
             <ImageButton
-                android:background="@android:color/transparent"
+                android:background="@drawable/searchbtn"
                 android:id = "@+id/Btn_Search"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/default_search"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>

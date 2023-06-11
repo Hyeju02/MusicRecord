@@ -15,12 +15,11 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:background="@android:color/transparent"
+                android:background="@drawable/beforebtn"
                 android:id="@+id/Btn_BF_toHome2"
-                android:layout_width="21dp"
-                android:layout_height="21dp"
+                android:layout_width="14dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/default_before"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
             <View
@@ -157,11 +156,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageButton
-                android:background="@android:color/transparent"
+                android:background="@drawable/playbtn"
                 android:id = "@+id/Btn_PlayDiaryUrl"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/default_playurl"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"/>
