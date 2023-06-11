@@ -66,7 +66,6 @@ public class ShowDiaryActivity extends AppCompatActivity implements View.OnClick
 
 
 
-
         //유튜브 링크 재생 버튼
         Btn_PlayDiaryUrl = (ImageButton) findViewById(R.id.Btn_PlayDiaryUrl);
         Btn_PlayDiaryUrl.setOnClickListener(this);
@@ -169,6 +168,7 @@ public class ShowDiaryActivity extends AppCompatActivity implements View.OnClick
                 if (PlayUrl == null){
                     //스트링 검색어로 넣은 유튜브 창 열기(노래 제목 + 가수 이름 검색된 화면)
                     Toast.makeText(getApplicationContext(), "Show you video", Toast.LENGTH_LONG).show();
+                    //모바일용은 주소 수정 필요
                     Intent urlintent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/results?search_query=" + songname + " " + singername));
                     startActivity(urlintent);
                     finish();
