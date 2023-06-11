@@ -165,18 +165,18 @@ public class ShowDiaryActivity extends AppCompatActivity implements View.OnClick
 
             case R.id.Btn_PlayDiaryUrl:
                 //만약 사용자가 직접 url을 넣지 않았다면
-                if (PlayUrl == null){
+                if (PlayUrl.equals(null)){
+                    Toast.makeText(getApplicationContext(), "Show you video", Toast.LENGTH_LONG).show();
+                    Intent urlintent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/results?search_query=" + songname + " " + singername));
+                    startActivity(urlintent1);
+                    finish();
+                }
+                else {
                     //스트링 검색어로 넣은 유튜브 창 열기(노래 제목 + 가수 이름 검색된 화면)
                     Toast.makeText(getApplicationContext(), "Show you video", Toast.LENGTH_LONG).show();
                     //모바일용은 주소 수정 필요
                     Intent urlintent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/results?search_query=" + songname + " " + singername));
                     startActivity(urlintent);
-                    finish();
-                }
-                //직접 url을 입력한 사용자라면
-                else {
-                    Intent urlintent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://" + PlayUrl));
-                    startActivity(urlintent1);
                     finish();
                 }
                 break;

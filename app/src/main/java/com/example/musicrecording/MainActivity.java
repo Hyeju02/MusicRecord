@@ -24,8 +24,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
-
-
     ListView listView;
     ListViewAdapter adapter;
     Spinner spinnermood;
