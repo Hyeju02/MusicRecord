@@ -9,11 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="58dp">
+        android:paddingHorizontal="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="42dp"
+            android:layout_height="56dp"
             android:orientation="horizontal">
             <ImageButton
                 android:background="@drawable/beforebtn"
@@ -24,7 +24,9 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
         <LinearLayout
             android:orientation = "horizontal"
             android:layout_width = "wrap_content"
@@ -50,6 +52,7 @@
                 android:textColor="@color/maincolor"
                 android:gravity = "center_vertical"
                 android:layout_gravity="center"/>
+
             <EditText
                 android:background="@null"
                 android:fontFamily="@font/suitregular"
@@ -83,7 +86,9 @@
                 android:hint="DD"
                 android:gravity="top"/>
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
         <LinearLayout
             android:orientation = "horizontal"
             android:layout_width = "match_parent"
@@ -94,17 +99,22 @@
                 android:layout_width ="match_parent"
                 android:layout_height="1dp" />
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
         <LinearLayout
             android:orientation = "horizontal"
             android:layout_width = "match_parent"
             android:layout_height = "42dp" >
+
             <Spinner
                 android:id="@+id/Spinner_SelectMood"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -120,7 +130,9 @@
                 android:layout_height="42dp"
                 android:hint="Song"
                 android:gravity="top"/>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
             <EditText
                 android:background="@null"
                 android:fontFamily="@font/suitregular"
@@ -132,7 +144,9 @@
                 android:layout_height="42dp"
                 android:hint="Singer"
                 android:gravity="top"/>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
             <EditText
                 android:background="@null"
                 android:fontFamily="@font/suitregular"
@@ -145,7 +159,9 @@
                 android:hint="Url"
                 android:gravity="top"
                 />
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
             <LinearLayout
                 android:orientation = "horizontal"
                 android:layout_width = "match_parent"
@@ -156,7 +172,9 @@
                     android:layout_width ="match_parent"
                     android:layout_height="1dp" />
             </LinearLayout>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
             <EditText
                 android:background="@null"
                 android:fontFamily="@font/suitregular"
@@ -184,6 +202,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:layout_marginRight="10dp"/>
+
                 <View
                     android:layout_width="0dp"
                     android:layout_height="0dp"
