@@ -176,6 +176,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="16dp" />
             <EditText
+                android:lineSpacingExtra="14dp"
                 android:background="@null"
                 android:fontFamily="@font/suitregular"
                 android:textColor="@color/graycolor"
