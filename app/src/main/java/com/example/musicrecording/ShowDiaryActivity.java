@@ -165,7 +165,7 @@ public class ShowDiaryActivity extends AppCompatActivity implements View.OnClick
 
             case R.id.Btn_PlayDiaryUrl:
                 //만약 사용자가 직접 url을 넣지 않았다면
-                if (PlayUrl.equals(null)){
+                if (PlayUrl.equals("")){
                     Toast.makeText(getApplicationContext(), "Show you video", Toast.LENGTH_LONG).show();
                     Intent urlintent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/results?search_query=" + songname + " " + singername));
                     startActivity(urlintent1);
